@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@400&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Kablammo', cursive;
+  --font-handwritten: 'Edu AU VIC WA NT Dots', sans-serif;
+  --font-body: '42dot Sans', sans-serif;
+
+  --color-olive: #dbd8aa;
+  --color-dark-green: #424c39;
+  --color-amber: #bd8c2a;
+  --color-burgundy: #721d1d;
+  --color-mend-card: #fff6f6;
+  --color-cream: #f1efe8;
+  --color-mend-yellow: #e0d170;
+  --color-mend-gold: #ceb423;
+  --color-near-black: #190101;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #f8f5e8;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.mend-card {
+  background: #fff6f6;
+  border: 1px solid black;
+  border-radius: 18px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mend-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.mend-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mend-btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.badge-repair { background: #57e57f; color: #111; }
+.badge-reuse { background: #1acbae; color: #111; }
+.badge-refuse { background: #2be2e2; color: #111; }
+.badge-donate { background: #1fdede; color: #111; }
+.badge-borrow { background: #383677; color: white; }
+.badge-exchange { background: #185acb; color: white; }
+
+input, textarea, select {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.page-enter {
+  animation: fadeSlideIn 0.18s ease-out;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

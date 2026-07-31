@@ -1,0 +1,10 @@
+{
+  "description": "Connect with your community through events, resource sharing, and volunteer opportunities while tracking your impact and contributions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
